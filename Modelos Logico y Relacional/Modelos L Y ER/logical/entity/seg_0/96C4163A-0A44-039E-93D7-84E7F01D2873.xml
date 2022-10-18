@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="96C4163A-0A44-039E-93D7-84E7F01D2873" name="Asignacion_Desasignacion">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:47:32 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Estado" id="8E3F71FD-84B9-825C-9DEC-4CB635C86F2C">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:50:11 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Carnet" id="76816348-5FC2-F948-0972-4450896F2890">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:54:51 UTC</createdTime>
+<generatorID>37D9A5E2-5652-2180-DE6B-DDE4663A37E4</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<referedAttribute>0B015875-1172-2365-36F0-0E6A332027DF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Curso_Habilitado" id="948B2EEE-5AAD-791F-A42F-8672179C325C">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:55:01 UTC</createdTime>
+<generatorID>195EF703-CA18-C084-B4BE-6D4CC12331FF</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<referedAttribute>AB18CAC8-00EF-0165-A8F1-005384575B24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Asignaciones" id="F5361313-437B-9C4C-4E9B-2FF0D7AE69E6">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:08:58 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="No_Desasignaciones" id="BFEC1870-EC8F-E0B4-C9BB-3FE047198160">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:09:18 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9CECDC81-8619-018C-40CC-8DCB4F46DBCE" name="Asignacion PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:54:51 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>76816348-5FC2-F948-0972-4450896F2890</attributeRef>
+<attributeRef>948B2EEE-5AAD-791F-A42F-8672179C325C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="70E93F8D-ABF1-955A-C9E2-85CCF3F7144D" name="Nota">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:05:29 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nota" id="595D805D-1BAC-0028-FAAC-E979FAA601B5">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:05:38 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Curso_Habilitado" id="554ED77D-F20F-3192-FB3F-B7CB754A306A">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:06:56 UTC</createdTime>
+<generatorID>37430B3E-7577-5BB2-D70F-2C7E519BD1DE</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<referedAttribute>AB18CAC8-00EF-0165-A8F1-005384575B24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

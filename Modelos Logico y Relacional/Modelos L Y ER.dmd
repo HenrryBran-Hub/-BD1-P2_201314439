@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Modelos L Y ER" id="7128C36C-A488-4C74-6422-46471E716A8C" version="3.5">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 22:58:38 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>7128C36C-A488-4C74-6422-46471E716A8C</designId>
+</OSDM_Design>

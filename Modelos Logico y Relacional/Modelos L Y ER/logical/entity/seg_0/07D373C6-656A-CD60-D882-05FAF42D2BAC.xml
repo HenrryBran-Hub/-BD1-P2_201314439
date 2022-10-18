@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="07D373C6-656A-CD60-D882-05FAF42D2BAC" name="Curso_Horario">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:26:57 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Dia" id="33B95311-B366-D122-3D9D-F60C1329E1E5">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:26:57 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Horario" id="3AD07800-B2CC-2B8B-602F-12D62213757E">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:26:57 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Curso_Habilitado" id="53C00964-76D8-2C66-A570-27717F88BC13">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:45:30 UTC</createdTime>
+<generatorID>F8D7A328-180D-9DBA-8718-E1CCA12985DD</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<referedAttribute>AB18CAC8-00EF-0165-A8F1-005384575B24</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9348172D-2F93-7BBD-D990-E4D7B56474E2" name="Curso_Horario PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-17 23:45:30 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>53C00964-76D8-2C66-A570-27717F88BC13</attributeRef>
+<attributeRef>33B95311-B366-D122-3D9D-F60C1329E1E5</attributeRef>
+<attributeRef>3AD07800-B2CC-2B8B-602F-12D62213757E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
