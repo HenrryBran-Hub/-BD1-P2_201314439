@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5BF350E5-F8DF-8233-80A7-754434F93B55" name="Acta">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>4FF07160-9B05-2A0C-D60E-4F2B6357A575</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Acta" id="F38825C2-BF86-1B31-425F-12D4D3EF9898">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>A0306A17-8BB9-200C-0F8C-A93A743A79B6</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="3F83A788-67FD-4019-F830-8EB3F8D173E8">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:31:23 UTC</createdTime>
+<generatorID>F2CA16FE-64DB-A0AB-8C97-9CC04FE876FA</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Curso_Habilitado_Id_Curso_Habilitado" id="4E42DFFF-34EE-DC6D-0DFD-5E13F2916545">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>304EB8B4-D586-3A71-285B-DF8AA33BB2BB</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="591F6A53-6DDB-287B-47A5-98D9E2F780F4" referredColumn="82A9E060-77C0-3225-FB6D-918E9D982182"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A3A6F622-A97E-990C-8AF8-398A76E2C9F0" name="Acta_PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>B33271DF-26DC-3F32-6D96-0318BCB99C04</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F38825C2-BF86-1B31-425F-12D4D3EF9898"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8AF90B71-A53C-3C4C-83C9-DD99406FE62B" name="Acta_Curso_Habilitado_FK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>1100431D-4128-0EB6-DD25-213AA744819F</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4E42DFFF-34EE-DC6D-0DFD-5E13F2916545"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

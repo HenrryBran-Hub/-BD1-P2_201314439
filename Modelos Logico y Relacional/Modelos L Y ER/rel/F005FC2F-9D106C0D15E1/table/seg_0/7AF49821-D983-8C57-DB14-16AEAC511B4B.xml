@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7AF49821-D983-8C57-DB14-16AEAC511B4B" name="Docente">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>21F842A6-9323-9FB8-C20A-7EF600B40229</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SIIF" id="52CA44F1-F758-21B4-7460-93A7511C9C40">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>03A78486-9A34-1542-A0EF-5E5170B9F906</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombres" id="8430B78A-5411-DBD3-BEDE-E41926898D41">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>8B94D0C5-94E4-C671-6721-EC3FA3714778</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="F9EAB011-D23A-6CC6-5200-AE5B935E3938">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>943538C9-5AF4-D63A-7B3E-B95EE0AAD722</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Nacimiento" id="724820E3-8A80-EF77-7CB1-0A94EE44E85D">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>B07DD9EF-1727-8F15-71FD-9DBB07D50CFE</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Correo" id="935C1ED1-120C-D15B-2653-5F39DA7A8528">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>EDFDC059-2E64-0516-8F92-DF789D586340</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Telefono" id="C3742F28-225A-295D-B3FE-EE2802E8A5CE">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>E47FC45E-4D10-31F0-DBA3-56DE5E8F081A</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Direccion" id="A4E2CE7C-E2D9-C420-5058-EBDE90BDFBBD">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>DDCDCAA2-FF23-713F-049F-5BA2EE154C56</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DPI" id="2456864C-9D64-454A-C94C-1F8F65206F33">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>E0738EA9-E5D8-78E3-D775-5C2193881512</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Ingreso" id="08F3A6CF-D3A6-C01B-C82F-699C81C403D6">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>3879788A-92EE-ADCA-74A2-5B7D7DCD0836</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="FE4EB2D3-623C-08C1-0B6D-D71A7E08A78F" name="Docente_PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>BCA19BBC-545E-97D6-EDBD-E6FDD72F1D4D</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="52CA44F1-F758-21B4-7460-93A7511C9C40"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

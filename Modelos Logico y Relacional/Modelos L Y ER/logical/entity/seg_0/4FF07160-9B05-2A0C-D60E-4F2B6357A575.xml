@@ -27,6 +27,18 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="Fecha" id="F2CA16FE-64DB-A0AB-8C97-9CC04FE876FA">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:30:53 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Id_Curso_Habilitado" id="304EB8B4-D586-3A71-285B-DF8AA33BB2BB">
 <createdBy>Henrr</createdBy>
 <createdTime>2022-10-18 00:13:11 UTC</createdTime>
@@ -47,8 +59,9 @@
 <createdBy>Henrr</createdBy>
 <createdTime>2022-10-18 00:12:44 UTC</createdTime>
 <ownerDesignName>Modelos L Y ER</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

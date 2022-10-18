@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D5531CC6-6BBA-0E6C-7C16-9BB39412EBFF" containerWithKeyObject="5B2585F9-51BD-2874-96C2-343D5430274D" localFKIndex="F9964F92-8F7B-52B6-BDF0-6AE8ACAED8BD" name="Nota_Asignacion_Desasignacion_FK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:33:59 UTC</createdTime>
+<generatorID>26B8F6C3-CCAC-B4D3-68B0-99747E96C0A7</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<referredTableLongName>Asignacion_Desasignacion</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6F6911B8-E91A-BBD7-088E-247BBA56FB37</referredTableID>
+<keyObject>935A1D1C-B3F8-67B8-720F-E77BA9B198D4</keyObject>
+<referredKeyID>935A1D1C-B3F8-67B8-720F-E77BA9B198D4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Estudiante_Carnet,Curso_Habilitado_Id_Curso_Habilitado</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

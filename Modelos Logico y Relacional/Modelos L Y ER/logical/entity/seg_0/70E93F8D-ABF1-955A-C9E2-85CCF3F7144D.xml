@@ -15,6 +15,18 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Id_Nota" id="32E8D646-663D-0F8C-460F-6A10FED69174">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:34:36 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="Nota" id="595D805D-1BAC-0028-FAAC-E979FAA601B5">
 <createdBy>Henrr</createdBy>
 <createdTime>2022-10-18 00:05:38 UTC</createdTime>
@@ -29,19 +41,49 @@
 <dataTypeScale>2</dataTypeScale>
 <ownDataTypeParameters>,3,2</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Id_Curso_Habilitado" id="554ED77D-F20F-3192-FB3F-B7CB754A306A">
+<Attribute name="Carnet" id="5AB12B01-FD9D-DF15-3B0D-F925AA72AFD1">
 <createdBy>Henrr</createdBy>
-<createdTime>2022-10-18 00:06:56 UTC</createdTime>
-<generatorID>37430B3E-7577-5BB2-D70F-2C7E519BD1DE</generatorID>
+<createdTime>2022-10-18 00:29:44 UTC</createdTime>
+<generatorID>26B8F6C3-CCAC-B4D3-68B0-99747E96C0A7</generatorID>
 <ownerDesignName>Modelos L Y ER</ownerDesignName>
 <engineerTo>
 <item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
 </engineerTo>
-<referedAttribute>AB18CAC8-00EF-0165-A8F1-005384575B24</referedAttribute>
+<referedAttribute>76816348-5FC2-F948-0972-4450896F2890</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Id_Curso_Habilitado" id="02D2C28C-F089-CBC8-4B8F-B158329D1FB3">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:29:44 UTC</createdTime>
+<generatorID>26B8F6C3-CCAC-B4D3-68B0-99747E96C0A7</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<referedAttribute>948B2EEE-5AAD-791F-A42F-8672179C325C</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3B115474-7A65-14C4-4C2D-59DECA6F7551" name="Nota PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:29:44 UTC</createdTime>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<engineerTo>
+<item key="F005FC2F-C634-BCC0-CACA-9D106C0D15E1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5AB12B01-FD9D-DF15-3B0D-F925AA72AFD1</attributeRef>
+<attributeRef>02D2C28C-F089-CBC8-4B8F-B158329D1FB3</attributeRef>
+<attributeRef>32E8D646-663D-0F8C-460F-6A10FED69174</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
 </Entity>

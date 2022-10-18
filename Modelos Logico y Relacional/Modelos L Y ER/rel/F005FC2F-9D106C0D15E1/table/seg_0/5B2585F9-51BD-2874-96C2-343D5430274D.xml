@@ -1,0 +1,94 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B2585F9-51BD-2874-96C2-343D5430274D" name="Nota">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>70E93F8D-ABF1-955A-C9E2-85CCF3F7144D</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id_Nota" id="A655AF95-826C-DC44-6F12-26E5C50919CF">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:35:02 UTC</createdTime>
+<generatorID>32E8D646-663D-0F8C-460F-6A10FED69174</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nota" id="AD9773BD-74F8-779F-B143-993D933B683F">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:16:40 UTC</createdTime>
+<generatorID>595D805D-1BAC-0028-FAAC-E979FAA601B5</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Asignacion_Desasignacion_Estudiante_Carnet" id="7183F93C-F1AE-7273-6727-71CB2230E70C">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:33:59 UTC</createdTime>
+<generatorID>5AB12B01-FD9D-DF15-3B0D-F925AA72AFD1</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT027</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5531CC6-6BBA-0E6C-7C16-9BB39412EBFF" referredColumn="949D97B0-5A6E-94FB-8E01-EE4A6C81FBA8"/>
+</associations>
+</Column>
+<Column name="Asignacion_Desasignacion_Curso_Habilitado_Id_Curso_Habilitado" id="4695026A-C00C-E454-7E08-5F164D97610D">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:33:59 UTC</createdTime>
+<generatorID>02D2C28C-F089-CBC8-4B8F-B158329D1FB3</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D5531CC6-6BBA-0E6C-7C16-9BB39412EBFF" referredColumn="DDBF92E6-3295-F7CC-E080-15CCF40D3300"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1C7E6862-FEF7-41D9-C048-3D621C2D4F37" name="Nota_PK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:33:59 UTC</createdTime>
+<generatorID>3B115474-7A65-14C4-4C2D-59DECA6F7551</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7183F93C-F1AE-7273-6727-71CB2230E70C"/>
+<colUsage columnID="4695026A-C00C-E454-7E08-5F164D97610D"/>
+<colUsage columnID="A655AF95-826C-DC44-6F12-26E5C50919CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F9964F92-8F7B-52B6-BDF0-6AE8ACAED8BD" name="Nota_Asignacion_Desasignacion_FK">
+<createdBy>Henrr</createdBy>
+<createdTime>2022-10-18 00:33:59 UTC</createdTime>
+<generatorID>26B8F6C3-CCAC-B4D3-68B0-99747E96C0A7</generatorID>
+<ownerDesignName>Modelos L Y ER</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7183F93C-F1AE-7273-6727-71CB2230E70C"/>
+<colUsage columnID="4695026A-C00C-E454-7E08-5F164D97610D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
