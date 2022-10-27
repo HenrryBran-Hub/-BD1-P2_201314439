@@ -1,9 +1,9 @@
 USE Facultad;
 #-------------------------------------------------------------------------
-#CREAMOS EL TRIGGER PARA LA INSERCION DE DATOS EN TABLA CARRERA
+#CREAMOS EL TRIGGER PARA LA INSERCION DE DATOS EN TABLA ESTUDIANTE
 #-------------------------------------------------------------------------
 DELIMITER $$
-CREATE TRIGGER bitacora_estudiante
+CREATE TRIGGER bitacora_estudiante_insertar
 AFTER INSERT ON Estudiante
 FOR EACH ROW
 BEGIN
@@ -59,7 +59,7 @@ CREATE PROCEDURE RegistrarEstudiante(
     IN Apellidos_In VARCHAR(100),
     IN Fecha_Nacimiento_In DATE,
     IN Correo_In VARCHAR(100),
-    IN Telefono_In NUMERIC(8,0),
+    IN Telefono_In INT,
     IN Direccion_In VARCHAR(150),
     IN DPI_In BIGINT,
     IN Id_Carrera_In INT
