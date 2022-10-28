@@ -65,6 +65,27 @@ END IF;
 RETURN (valido);
 END$$
 
+#-------------------------------------------------------------------------
+#CREAMOS LA FUNCION PARA VALIDAR BOOLEANO
+#-------------------------------------------------------------------------
+DELIMITER $$
+CREATE FUNCTION ValidarBooleano(
+	cadena VARCHAR(10)
+)
+RETURNS BOOLEAN
+DETERMINISTIC
+BEGIN
+
+DECLARE valido BOOLEAN;
+#validamos con regex
+IF (SELECT cadena = "1" OR cadena = "0")THEN
+	SELECT TRUE INTO valido;
+ELSE 
+	SELECT FALSE INTO valido;
+END IF;
+
+RETURN (valido);
+END$$
 
 #-------------------------------------------------------------------------
 #CREAMOS LA FUNCION PARA VALIDAR EL CORREO

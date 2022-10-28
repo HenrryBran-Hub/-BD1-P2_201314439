@@ -3,13 +3,41 @@ USE Facultad;
 #CREAMOS EL TRIGGER PARA LA INSERCION DE DATOS EN TABLA ESTUDIANTE
 #-------------------------------------------------------------------------
 DELIMITER $$
-CREATE TRIGGER bitacora_estudiante_insertar
+CREATE TRIGGER bitacora_estudiante_insert
 AFTER INSERT ON Estudiante
 FOR EACH ROW
 BEGIN
 #Sentencias SQL
-	INSERT INTO Bitacora(Fecha,Descripcion,tabla) 
-    VALUES (SYSDATE(), "Se ha insertado un nuevo registro","Estudiante");
+	INSERT INTO Bitacora(Fecha,Descripcion,Tipo) 
+    VALUES (SYSDATE(), "Se ha realizado una accion en la tabla Estudiante","INSERT");
+END;
+$$
+
+#-------------------------------------------------------------------------
+#CREAMOS EL TRIGGER PARA LA ELIMINACION DE DATOS EN TABLA ESTUDIANTE
+#-------------------------------------------------------------------------
+DELIMITER $$
+CREATE TRIGGER bitacora_estudiante_delete
+AFTER DELETE ON Estudiante
+FOR EACH ROW
+BEGIN
+#Sentencias SQL
+	INSERT INTO Bitacora(Fecha,Descripcion,Tipo) 
+    VALUES (SYSDATE(), "Se ha realizado una accion en la tabla Estudiante","DELETE");
+END;
+$$
+
+#-------------------------------------------------------------------------
+#CREAMOS EL TRIGGER PARA LA ACTUALIZACION DE DATOS EN TABLA ESTUDIANTE
+#-------------------------------------------------------------------------
+DELIMITER $$
+CREATE TRIGGER bitacora_estudiante_update
+AFTER UPDATE ON Estudiante
+FOR EACH ROW
+BEGIN
+#Sentencias SQL
+	INSERT INTO Bitacora(Fecha,Descripcion,Tipo) 
+    VALUES (SYSDATE(), "Se ha realizado una accion en la tabla Estudiante","UPDATE");
 END;
 $$
 
@@ -59,7 +87,7 @@ CREATE PROCEDURE RegistrarEstudiante(
     IN Apellidos_In VARCHAR(100),
     IN Fecha_Nacimiento_In DATE,
     IN Correo_In VARCHAR(100),
-    IN Telefono_In INT,
+    IN Telefono_In VARCHAR(10),
     IN Direccion_In VARCHAR(150),
     IN DPI_In BIGINT,
     IN Id_Carrera_In INT

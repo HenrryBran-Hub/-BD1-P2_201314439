@@ -3,13 +3,41 @@ USE Facultad;
 #CREAMOS EL TRIGGER PARA LA INSERCION DE DATOS EN TABLA CARRERA
 #-------------------------------------------------------------------------
 DELIMITER $$
-CREATE TRIGGER bitacora_carrera
+CREATE TRIGGER bitacora_carrera_insert
 AFTER INSERT ON Carrera
 FOR EACH ROW
 BEGIN
 #Sentencias SQL
-	INSERT INTO Bitacora(Fecha,Descripcion,tabla) 
-    VALUES (SYSDATE(), "Se ha insertado un nuevo registro","Carrera");
+	INSERT INTO Bitacora(Fecha,Descripcion,Tipo) 
+    VALUES (SYSDATE(), "Se ha realizado una accion en la tabla Carrera","INSERT");
+END;
+$$
+
+#-------------------------------------------------------------------------
+#CREAMOS EL TRIGGER PARA LA ELIMINACION DE DATOS EN TABLA CARRERA
+#-------------------------------------------------------------------------
+DELIMITER $$
+CREATE TRIGGER bitacora_carrera_delete
+AFTER DELETE ON Carrera
+FOR EACH ROW
+BEGIN
+#Sentencias SQL
+	INSERT INTO Bitacora(Fecha,Descripcion,Tipo) 
+    VALUES (SYSDATE(), "Se ha realizado una accion en la tabla Carrera","DELETE");
+END;
+$$
+
+#-------------------------------------------------------------------------
+#CREAMOS EL TRIGGER PARA LA ACTUALIZACION DE DATOS EN TABLA CARRERA
+#-------------------------------------------------------------------------
+DELIMITER $$
+CREATE TRIGGER bitacora_carrera_update
+AFTER UPDATE ON Carrera
+FOR EACH ROW
+BEGIN
+#Sentencias SQL
+	INSERT INTO Bitacora(Fecha,Descripcion,Tipo) 
+    VALUES (SYSDATE(), "Se ha realizado una accion en la tabla Carrera","UPDATE");
 END;
 $$
 

@@ -79,7 +79,7 @@ CREATE TABLE IF NOT EXISTS Curso_Habilitado (
     Ciclo VARCHAR(2) NOT NULL,
 	Cupo_Maximo INT NOT NULL,
     Seccion VARCHAR(1) NOT NULL,
-    Annio DATE NOT NULL,
+    Annio INT NOT NULL,
     Asignados INT NOT NULL,
     Id_Curso BIGINT NOT NULL,
     SIIF BIGINT  NOT NULL,
@@ -152,7 +152,7 @@ CREATE TABLE IF NOT EXISTS Bitacora (
 	Id_Bitacora BIGINT AUTO_INCREMENT NOT NULL,	
     Fecha DATETIME NOT NULL,
     Descripcion VARCHAR(200) NOT NULL,
-    Tabla VARCHAR(50) NOT NULL,
+    Tipo VARCHAR(50) NOT NULL,
     PRIMARY KEY (Id_Bitacora) 
 )ENGINE=INNODB;
 
