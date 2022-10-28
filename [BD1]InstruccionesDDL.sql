@@ -133,11 +133,11 @@ CREATE TABLE IF NOT EXISTS Asignacion_Desasignacion (
 #CREAMOS LA TABLA DE Nota
 #-------------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS Nota (
-	Id_Nota BIGINT NOT NULL,	
-    Nota INT NOT NULL,
-    Id_Curso_Habilitado BIGINT NOT NULL,
+	Id_Nota BIGINT AUTO_INCREMENT NOT NULL,	
     Carnet BIGINT NOT NULL,
-    PRIMARY KEY (Id_Curso_Habilitado,Carnet,Id_Nota), 
+    Nota INT NOT NULL,
+    Id_Curso_Habilitado BIGINT NOT NULL,    
+    PRIMARY KEY (Id_Nota), 
     FOREIGN KEY (Id_Curso_Habilitado) REFERENCES Asignacion_Desasignacion(Id_Curso_Habilitado)
     ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (Carnet) REFERENCES Asignacion_Desasignacion(Carnet)

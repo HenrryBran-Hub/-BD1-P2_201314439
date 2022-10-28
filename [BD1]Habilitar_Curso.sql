@@ -47,7 +47,8 @@ $$
 DELIMITER $$
 CREATE FUNCTION ExisteCurso_Ciclo_Seccion(
 	Ciclo_In VARCHAR(15),
-    Seccion_In VARCHAR(15)
+    Seccion_In VARCHAR(15),
+    Id_Curso_In VARCHAR(15)
 )
 RETURNS BOOLEAN
 DETERMINISTIC
@@ -55,7 +56,7 @@ BEGIN
 
 DECLARE valido BOOLEAN;
 -- Sentenicas SQL
-SELECT EXISTS (SELECT 1 FROM Curso_Habilitado WHERE Ciclo_In = Ciclo AND Seccion_In = Seccion) INTO valido;
+SELECT EXISTS (SELECT 1 FROM Curso_Habilitado WHERE Ciclo_In = Ciclo AND Seccion_In = Seccion AND Id_Curso = Id_Curso_In) INTO valido;
 RETURN (valido);
 
 END$$
@@ -105,7 +106,7 @@ IF (NOT ValidarSeccion(Seccion_In)) THEN
 END IF;
 
 #validamos que no exista el curso en el ciclo y la seccion 
-IF (ExisteCurso_Ciclo_Seccion(Ciclo_In,Seccion_In)) THEN
+IF (ExisteCurso_Ciclo_Seccion(Ciclo_In,Seccion_In,Id_Curso_In)) THEN
 	SELECT "La Seccion ingresada esta repetida para el ciclo que esta ingresando, cambie de seccion o de ciclo" AS ERROR;
 	LEAVE HabilitarCurso;
 END IF;
