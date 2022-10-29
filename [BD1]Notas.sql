@@ -107,7 +107,7 @@ VALUES (Carnet_In,Nota_In,Id_Curso_Habilitado_In);
 SELECT Nota_In INTO Nota_In_In;
 IF (Nota_In_In >= 61) THEN
 	#actualizamos la tabla de Curso Curso_Habilitado
-    SELECT Creditos_Otorga FROM Curso WHERE Curso.Id_Curso = Curso_In INTO Creditos_Otorgados;
+    SELECT Creditos_Otorga FROM Curso WHERE Curso.Id_Curso = Id_Curso_In INTO Creditos_Otorgados;
     
 	UPDATE Estudiante 
 	SET Estudiante.Creditos = Creditos + Creditos_Otorgados

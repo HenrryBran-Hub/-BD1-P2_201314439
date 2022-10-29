@@ -190,7 +190,7 @@ DECLARE Carnet_Carrera_In INT;
 SELECT Id_Carrera FROM Curso WHERE Id_Curso_In = Id_Curso INTO Curso_Carrera_In;
 SELECT Id_Carrera FROM Estudiante WHERE Carnet_In = Carnet INTO Carnet_Carrera_In;
 
-IF (Carnet_Carrera_In = Curso_Carrera_In OR Carnet_Carrera_In = 1) THEN
+IF (Curso_Carrera_In = Carnet_Carrera_In OR Curso_Carrera_In = 1) THEN
 	RETURN TRUE;
 ELSE
 	RETURN FALSE;
@@ -283,7 +283,7 @@ IF (NOT ExisteCreditosNecesarios(Id_Curso_In,Carnet_In)) THEN
 	LEAVE AsignarCurso;
 END IF;
 #validamos que pertenezca el curso correspondiente a su carrera o area comun
-IF (ExisteCursoCarnetCarrera(Id_Curso_In,Carnet_In)) THEN
+IF (NOT ExisteCursoCarnetCarrera(Id_Curso_In,Carnet_In)) THEN
 	SELECT "El Estudiante no cumple con la carrera correspondiente o el curso no es de area comun" AS ERROR;
 	LEAVE AsignarCurso;
 END IF;

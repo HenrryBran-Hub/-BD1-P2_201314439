@@ -177,3 +177,135 @@ call HabilitarCurso("15","1s","124635874","5","b");
 select * from curso_habilitado;
 select * from bitacora;
 
+#validamos que exista el curso
+call HabilitarCurso("99","1s","124635874","5","b");
+#validamos que el ciclo sea el correcto
+call HabilitarCurso("15","3s","124635874","5","c");
+#validamos que exista el docente
+call HabilitarCurso("15","1s","1213","5","b");
+#validamos que el cupo sea positivo
+call HabilitarCurso("15","1s","124635874","-9","b");
+#validamos que sea entero
+call HabilitarCurso("15","1s","124635874","5.658","b");
+#validamos seccion
+call HabilitarCurso("15","1s","124635874","5","cc");
+
+#-------------------------------------------------------------------------
+#INGRESAMOS DATOS Y PROBAMOS VALIDACIONES HORARIO DE CURSOS
+#-------------------------------------------------------------------------
+call AgregarHorario("1","1","07:10-09:00");
+call AgregarHorario("1","2","07:10-09:00");
+call AgregarHorario("1","3","07:10-09:00");
+call AgregarHorario("1","5","07:10-09:00");
+call AgregarHorario("2","1","10:40-12:00");
+call AgregarHorario("3","2","13:40-15:00");
+call AgregarHorario("4","3","10:40-11:00");
+call AgregarHorario("5","4","15:40-16:30");
+call AgregarHorario("6","5","10:40-12:00");
+call AgregarHorario("7","6","10:40-12:00");
+call AgregarHorario("8","7","12:40-18:00");
+call AgregarHorario("9","1","10:40-12:00");
+call AgregarHorario("10","2","07:40-08:30");
+call AgregarHorario("11","3","08:40-10:45");
+call AgregarHorario("12","4","10:40-12:00");
+call AgregarHorario("13","5","10:40-13:00");
+call AgregarHorario("14","6","10:40-12:40");
+call AgregarHorario("15","7","06:40-07:50");
+call AgregarHorario("16","1","10:40-12:00");
+call AgregarHorario("17","2","09:40-10:20");
+call AgregarHorario("17","3","10:40-12:00");
+call AgregarHorario("18","4","14:40-15:50");
+call AgregarHorario("19","5","10:40-11:30");
+call AgregarHorario("20","6","16:40-17:30");
+call AgregarHorario("21","7","10:40-13:10");
+call AgregarHorario("22","1","18:40-19:20");
+call AgregarHorario("23","2","10:40-12:40");
+call AgregarHorario("24","3","10:40-12:30");
+call AgregarHorario("25","4","20:40-21:50");
+call AgregarHorario("26","5","10:40-15:00");
+call AgregarHorario("27","6","10:40-13:00");
+call AgregarHorario("28","7","22:40-23:40");
+call AgregarHorario("29","5","03:40-07:00");
+call AgregarHorario("30","5","10:40-14:00");
+select * from Curso_Horario;
+select * from bitacora;
+
+#validamos que exista el curso
+call AgregarHorario("155","2","07:10-09:00");
+#validamos que el ciclo sea el correcto
+call AgregarHorario("1","21","07:10-09:00");
+#validamos que exista el docente
+call AgregarHorario("1","2","07:1 0- 09:00");
+
+#-------------------------------------------------------------------------
+#INGRESAMOS DATOS Y PROBAMOS VALIDACIONES ASIGNACION DE CURSOS
+#-------------------------------------------------------------------------
+call AsignarCurso("1","1s","a","201314439");
+call AsignarCurso("1","1s","a","199863257");
+call AsignarCurso("1","1s","a","200359761");
+call AsignarCurso("1","1s","a","201345796");
+call AsignarCurso("1","1s","a","201316845");
+call AsignarCurso("1","1s","b","201468957");
+call AsignarCurso("1","1s","b","201431274");
+call AsignarCurso("1","1s","b","201465218");
+call AsignarCurso("1","1s","b","201468925");
+call AsignarCurso("1","1s","b","201568974");
+call AsignarCurso("6","1s","a","201314439");
+call AsignarCurso("6","1s","a","201468925");
+
+#validamos que el curso exista
+call AsignarCurso("60","1s","a","201468925");
+#valiadmos que el ciclo cumpla con las normas
+call AsignarCurso("6","1ss","a","201468925");
+#validamos que la secion sea un caracter
+call AsignarCurso("6","1s","ak","201468925");
+#validamos que exista el carnet
+call AsignarCurso("6","1s","a","231321");
+#validamos que el curso pertenesca a la carrera del usuario
+call AsignarCurso("6","1s","a","201431274");
+#validamos que exista el cupo
+call AsignarCurso("1","1s","a","201336985");
+
+#-------------------------------------------------------------------------
+#INGRESAMOS DATOS Y PROBAMOS VALIDACIONES DESASIGNACION DE CURSO
+#-------------------------------------------------------------------------
+call DesasignarCurso("1","1s","a","201316845");
+call DesasignarCurso("1","1s","b","201468957");
+call DesasignarCurso("6","1s","a","201468925");
+
+#validamos que el curso exista
+call DesasignarCurso("60","1s","a","201468925");
+#valiadmos que el ciclo cumpla con las normas
+call DesasignarCurso("6","1ss","a","201468925");
+#validamos que la secion sea un caracter
+call DesasignarCurso("6","1s","ak","201468925");
+#validamos que exista el carnet
+call DesasignarCurso("6","1s","a","231321");
+
+#-------------------------------------------------------------------------
+#INGRESAMOS DATOS Y PROBAMOS VALIDACIONES NOTAS
+#-------------------------------------------------------------------------
+call IngresarNota("1","1s","a","201314439","66");
+call IngresarNota("1","1s","a","199863257","61");
+call IngresarNota("1","1s","a","200359761","60");
+call IngresarNota("1","1s","a","201345796","59");
+call IngresarNota("1","1s","a","201316845","55");
+call IngresarNota("1","1s","b","201468957","66");
+call IngresarNota("1","1s","b","201431274","61");
+call IngresarNota("1","1s","b","201465218","59");
+call IngresarNota("1","1s","b","201468925","63");
+call IngresarNota("1","1s","b","201568974","31");
+call IngresarNota("6","1s","a","201314439","61");
+call IngresarNota("6","1s","a","201468925","0");
+
+#validamos que el curso exista
+call IngresarNota("60","1s","a","201314439","66");
+#valiadmos que el ciclo cumpla con las normas
+call IngresarNota("1","1sss","a","201314439","66");
+#validamos que la secion sea un caracter
+call IngresarNota("1","1s","aas","201314439","66");
+#validamos que exista el carnet
+call IngresarNota("1","1s","a","12355","66");
+
+
+
