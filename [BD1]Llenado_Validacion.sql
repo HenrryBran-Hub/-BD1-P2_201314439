@@ -307,5 +307,11 @@ call IngresarNota("1","1s","aas","201314439","66");
 #validamos que exista el carnet
 call IngresarNota("1","1s","a","12355","66");
 
+call ConsultarPensum("3");
+call ConsultarEstudiante("201339");
+call ConsultarDocente(124635874);
+call ConsultarAsignados(1,"1s","2020","A");
+call ConsultarAprobacion(1,"1s","2022","B");
+
 
 
