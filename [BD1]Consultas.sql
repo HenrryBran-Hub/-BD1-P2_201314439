@@ -9,6 +9,12 @@ CREATE PROCEDURE ConsultarPensum(
 )
 ConsultarPensum:BEGIN 
 
+#Validamos que exista la carrera
+IF (NOT ExisteCarreraId(Id_Carrera_In)) THEN
+	SELECT "La carrera ingresada no existe en el sistema de bases de datos" AS ERROR;
+	LEAVE ConsultarPensum;
+END IF;
+
 SELECT 
 Curso.Id_Curso AS "Codigo de curso",
 Curso.Nombre AS "Nombre del Curso",
