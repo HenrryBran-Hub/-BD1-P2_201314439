@@ -100,6 +100,13 @@ IF (NOT ValidarNumerosDecimales(Nota_In)) THEN
 	LEAVE IngresarNota;
 END IF;
 
+
+#Validamos que sean todos positivos
+IF (Nota_In_In >= 0 AND Nota_In_In <= 100) THEN
+	SELECT "La nota ingresada no es valida, tiene que ser positiva y mayor a 0" AS ERROR;
+	LEAVE IngresarNota;
+END IF;
+
 #ingresamos los datos 
 INSERT INTO Nota(Carnet,Nota,Id_Curso_Habilitado)
 VALUES (Carnet_In,Nota_In,Id_Curso_Habilitado_In);

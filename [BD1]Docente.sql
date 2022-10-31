@@ -93,6 +93,18 @@ IF (NOT ValidarNumerosEnteros(Telefono_In)) THEN
 	LEAVE RegistrarDocente;
 END IF;
 
+#Validamos que sean todos letras
+IF (NOT ValidarLetras(Nombres_In)) THEN
+	SELECT "Nombres no permitido, contiene caracteres no validos, solo se permiten letras y espacios" AS ERROR;
+	LEAVE RegistrarDocente;
+END IF;
+
+#Validamos que sean todos letras
+IF (NOT ValidarLetras(Apellidos_In)) THEN
+	SELECT "Apellidos no permitido, contiene caracteres no validos, solo se permiten letras y espacios" AS ERROR;
+	LEAVE RegistrarDocente;
+END IF;
+
 #ingresamos los datos 
 INSERT INTO Docente(SIIF,Nombres,Apellidos,Fecha_Nacimiento,Correo,Telefono,Direccion,DPI,Fecha_Ingreso)
 VALUES (SIIF_In,Nombres_In,Apellidos_In,Fecha_Nacimiento_In,Correo_In,Telefono_In,Direccion_In,DPI_In,CURDATE());

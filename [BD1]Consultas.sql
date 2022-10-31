@@ -1,3 +1,4 @@
+USE Facultad;
 #-------------------------------------------------------------------------
 #CONSULTAR PENSUM
 #-------------------------------------------------------------------------
@@ -209,3 +210,4 @@ AND Asignacion_Desasignacion.Estado = 1
 GROUP BY Curso.Id_Curso,Estudiante.Carnet;
 
 END$$
+

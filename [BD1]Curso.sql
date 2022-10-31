@@ -104,6 +104,12 @@ IF (NOT ValidarBooleano(Opcionalidad_In)) THEN
 	LEAVE CrearCurso;
 END IF;
 
+#Validamos que sean todos letras
+IF (NOT ValidarLetras(Nombre_In)) THEN
+	SELECT "Nombre no permitido, contiene caracteres no validos, solo se permiten letras y espacios" AS ERROR;
+	LEAVE CrearCurso;
+END IF;
+
 #ingresamos los datos 
 INSERT INTO Curso(Id_Curso,Nombre,Creditos_Necesarios,Creditos_Otorga,Opcionalidad,Id_Carrera)
 VALUES (Id_Curso_In,Nombre_In,Creditos_Necesarios_In,Creditos_Otorga_In,Opcionalidad_In,Id_Carrera_In);

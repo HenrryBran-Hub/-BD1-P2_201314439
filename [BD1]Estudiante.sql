@@ -118,6 +118,18 @@ IF (NOT ExisteCarreraId(Id_Carrera_In)) THEN
 	LEAVE RegistrarEstudiante;
 END IF;
 
+#Validamos que sean todos letras
+IF (NOT ValidarLetras(Nombres_In)) THEN
+	SELECT "Nombre no permitido, contiene caracteres no validos, solo se permiten letras y espacios" AS ERROR;
+	LEAVE RegistrarEstudiante;
+END IF;
+
+#Validamos que sean todos letras
+IF (NOT ValidarLetras(Apellidos_In)) THEN
+	SELECT "Nombre no permitido, contiene caracteres no validos, solo se permiten letras y espacios" AS ERROR;
+	LEAVE RegistrarEstudiante;
+END IF;
+
 #ingresamos los datos 
 INSERT INTO Estudiante(Carnet,Nombres,Apellidos,Fecha_Nacimiento,Correo,Telefono,Direccion,DPI,Fecha_Ingreso,Creditos,Id_Carrera)
 VALUES (Carnet_In,Nombres_In,Apellidos_In,Fecha_Nacimiento_In,Correo_In,Telefono_In,Direccion_In,DPI_In,CURDATE(),0,Id_Carrera_In);
