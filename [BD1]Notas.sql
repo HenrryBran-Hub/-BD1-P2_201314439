@@ -100,10 +100,10 @@ IF (NOT ValidarNumerosDecimales(Nota_In)) THEN
 	LEAVE IngresarNota;
 END IF;
 
-
-#Validamos que sean todos positivos
-IF (Nota_In_In >= 0 AND Nota_In_In <= 100) THEN
-	SELECT "La nota ingresada no es valida, tiene que ser positiva y mayor a 0" AS ERROR;
+#validamos que nota sea mayor que 0 y menor que 100
+SELECT Nota_In INTO Nota_In_In;
+IF (NOT (Nota_In_In >= 0 AND Nota_In_In <= 100)) THEN
+	SELECT "La nota ingresada no es valida, tiene que ser positiva y sin signo y mayor o igual a 0 o menor o igual a 100" AS ERROR;
 	LEAVE IngresarNota;
 END IF;
 

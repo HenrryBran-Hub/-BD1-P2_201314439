@@ -7,12 +7,12 @@ CALL CrearCarrera('Quimica'); -- agrege esta porque no estaba XD
  
  
 -- ########################### CREAR ESTUDIANTE ###########################
-CALL RegistrarEstudiante(202004765, 'Javier!', 'Gutierrez?', '2001-03-14', 'javier@gmail.com', 42543549, '29 avenida', 3024021520101, 1); -- nombre inválido
-CALL RegistrarEstudiante(202004765, 'Javier', 'Gutierrez', '2001-03-14', 'javiergmail.com', 42543549, '29 avenida', 3024021520101, 1); -- correo inválido
+CALL RegistrarEstudiante(202004765, 'Javier!', 'Gutierrez?', '2001-03-14', 'javier@gmail.com', 42543549, '29 avenida', 3024021520101, 2); -- nombre inválido
+CALL RegistrarEstudiante(202004765, 'Javier', 'Gutierrez', '2001-03-14', 'javiergmail.com', 42543549, '29 avenida', 3024021520101, 2); -- correo inválido
 CALL RegistrarEstudiante(201409335, 'Fabian', 'Reyna', '2001-6-13', 'Fabian@gmail.com', 9502001, '7 avenida', 53620010101, 99); -- no existe carrera
 CALL RegistrarEstudiante(201409335, 'Fabian', 'Reyna', '2001-6-13', 'Fabian@gmail.com', 9502001, '7 avenida', 53620010101, -5); -- número inválido / no existe carrera
-CALL RegistrarEstudiante(201506554, 'Angel', 'Marroquin', '1996-1-6', 'Angel@gmail.com', 6401996, '19 avenida', 45119960101, 1); -- ok
-CALL RegistrarEstudiante(201506554, 'Angel', 'Marroquin', '1996-1-6', 'Angel@gmail.com', 6401996, '19 avenida', 45119960101, 1); -- error duplicado
+CALL RegistrarEstudiante(201506554, 'Angel', 'Marroquin', '1996-1-6', 'Angel@gmail.com', 6401996, '19 avenida', 45119960101, 2); -- ok
+CALL RegistrarEstudiante(201506554, 'Angel', 'Marroquin', '1996-1-6', 'Angel@gmail.com', 6401996, '19 avenida', 45119960101, 2); -- error duplicado
 CALL RegistrarEstudiante(201818477, 'Diego', 'Arriaga', '2012-12-19', 'Diego@gmail.com', 8712012, '8 avenida', 741220120101, 3); -- ok
 CALL RegistrarEstudiante(201902238, 'Luis', 'Castellanos', '2001-01-25', 'luis@gmail.com', 42141631, '2 calle', 3006251851047, 2); -- ok
  
@@ -25,7 +25,7 @@ CALL RegistrarDocente('William', 'Escobar', '2012-7-10', 'willy@gmail.com', 1512
  
 -- ########################### CREAR CURSO ###########################
     -- Area común
-    CALL CrearCurso(1112, 'Mate 1', 0, 3, 1, 1); -- ok
+    CALL CrearCurso(1112, "Mate 1", 0, 3, 1, 1); -- ok
     CALL CrearCurso(1112, 'Mate 1', 0, 3, 1, 1); -- error duplicado
     CALL CrearCurso(1113, 'Mate 2', 3, 5, 1, 1); -- ok
     CALL CrearCurso(1114, 'Error 1', -25, 3, 1, 1); -- número inválido
@@ -105,7 +105,6 @@ CALL IngresarNota(1112,'VD','A',201818477,49.5); -- error ya tiene nota (o actua
 CALL IngresarNota(1112,'VD','A',201818477,200); -- error nota inválida
 CALL IngresarNota(1112,'VD','A',201506554,99.45); -- error no se encuentra asignado al curso
  
- 
  /*
 -- ########################## GENERAR ACTA ##########################
 CALL GenerarActa(1112,'VD','Y'); -- error no existe sección
@@ -164,5 +163,6 @@ CALL ConsultarDesasignacion(1112,'VD',2022,'A'); -- ok
 /* TABLA HISTORIAL */
 -- debe tener los tres tipos de trigger para cada evento (insert, update, delete)
 SELECT * FROM bitacora;
+-- drop database facultad;
  
  
