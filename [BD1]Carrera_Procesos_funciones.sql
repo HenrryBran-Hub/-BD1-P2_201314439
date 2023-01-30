@@ -12,7 +12,7 @@ BEGIN
 
 DECLARE valido BOOLEAN;
 #validamos con regex
-IF (SELECT REGEXP_INSTR(cadena,'[^a-zA-Z ]') = 0)THEN
+IF (SELECT REGEXP_INSTR(cadena,'[^A-zÀ-ú  ]') = 0)THEN
 	SELECT TRUE INTO valido;
 ELSE 
 	SELECT FALSE INTO valido;

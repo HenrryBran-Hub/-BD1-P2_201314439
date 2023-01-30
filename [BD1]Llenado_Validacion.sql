@@ -285,7 +285,7 @@ call DesasignarCurso("6","1s","a","231321");
 #-------------------------------------------------------------------------
 #INGRESAMOS DATOS Y PROBAMOS VALIDACIONES NOTAS
 #-------------------------------------------------------------------------
-call IngresarNota("1","1s","a","201314439","66");
+call IngresarNota("1","1s","a","201314439","31");
 call IngresarNota("1","1s","a","199863257","61");
 call IngresarNota("1","1s","a","200359761","60");
 call IngresarNota("1","1s","a","201345796","59");
@@ -310,8 +310,8 @@ call IngresarNota("1","1s","a","12355","66");
 call ConsultarPensum("3");
 call ConsultarEstudiante("201339");
 call ConsultarDocente(124635874);
-call ConsultarAsignados(1,"1s","2020","A");
-call ConsultarAprobacion(1,"1s","2022","B");
+call ConsultarAsignados(1,"1s","2022","A");
+call ConsultarAprobacion(1,"1s","2022","A");
 
 
 

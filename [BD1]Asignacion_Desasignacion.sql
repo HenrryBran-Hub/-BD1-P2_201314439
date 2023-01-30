@@ -362,7 +362,7 @@ END IF;
 
 #Validamos que este asignado
 IF (NOT ExisteAsignacion(Id_Curso_Habilitado_In,Carnet_In)) THEN
-	SELECT "El Estudiante ya esta asignado en el sistema de bases de datos" AS ERROR;
+	SELECT "El Estudiante ya esta desasignado en el sistema de bases de datos" AS ERROR;
 	LEAVE DesasignarCurso;
 END IF;
 
